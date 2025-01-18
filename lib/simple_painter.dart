@@ -8,4 +8,8 @@ export 'src/controllers/items/text_item.dart';
 export 'src/controllers/paint_actions/action_type_enum.dart';
 export 'src/controllers/painter_controller/painter_controller.dart';
 export 'src/controllers/settings/painter_settings.dart';
+export 'src/models/brush_model.dart';
+export 'src/models/position_model.dart';
+export 'src/models/render_item_model.dart';
+export 'src/models/size_model.dart';
 export 'src/views/widgets/painter_widget/painter_widget.dart';

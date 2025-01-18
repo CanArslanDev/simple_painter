@@ -14,6 +14,7 @@ extension PainterControllerItemImageValues on PainterController {
     AlignmentGeometry? gradientBegin,
     AlignmentGeometry? gradientEnd,
     double? gradientOpacity,
+    PositionModel? position,
   }) {
     final newItem = item.copyWith(
       fit: boxFit ?? item.fit,
@@ -26,6 +27,7 @@ extension PainterControllerItemImageValues on PainterController {
       gradientBegin: gradientBegin ?? item.gradientBegin,
       gradientEnd: gradientEnd ?? item.gradientEnd,
       gradientOpacity: gradientOpacity ?? item.gradientOpacity,
+      position: position ?? item.position,
     );
     _changeItemValues(newItem);
   }

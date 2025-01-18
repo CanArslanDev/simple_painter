@@ -11,6 +11,7 @@ extension PainterControllerItemTextValues on PainterController {
     Color? gradientEndColor,
     AlignmentGeometry? gradientBegin,
     AlignmentGeometry? gradientEnd,
+    PositionModel? position,
   }) {
     final newItem = item.copyWith(
       textStyle: textStyle ?? item.textStyle,
@@ -20,6 +21,7 @@ extension PainterControllerItemTextValues on PainterController {
       gradientEndColor: gradientEndColor ?? item.gradientEndColor,
       gradientBegin: gradientBegin ?? item.gradientBegin,
       gradientEnd: gradientEnd ?? item.gradientEnd,
+      position: position ?? item.position,
     );
     _changeItemValues(newItem);
   }

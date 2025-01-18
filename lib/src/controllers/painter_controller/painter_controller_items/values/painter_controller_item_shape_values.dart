@@ -8,12 +8,14 @@ extension PainterControllerItemShapeValues on PainterController {
     Color? backgroundColor,
     Color? lineColor,
     double? thickness,
+    PositionModel? position,
   }) {
     final newItem = item.copyWith(
       shapeType: shapeType ?? item.shapeType,
       backgroundColor: backgroundColor ?? item.backgroundColor,
       lineColor: lineColor ?? item.lineColor,
       thickness: thickness ?? item.thickness,
+      position: position ?? item.position,
     );
     _changeItemValues(newItem);
   }
